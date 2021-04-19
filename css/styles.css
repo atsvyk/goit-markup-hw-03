@@ -103,7 +103,7 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-color: var(--secondary-title-color);
+color: var(--primary-text-color);
 }
 
 .port-lnk {
@@ -170,7 +170,7 @@ cursor: pointer;
   display: flex;
 }
 
-.info-block {
+.info-block:not(:last-child) {
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 30px;
@@ -210,12 +210,8 @@ cursor: pointer;
   display: flex;
 }
 
-.img {
+.img:not(:last-child) {
   margin-right: 30px;
-}
-
-.img-q {
-  margin-right: 0px;
 }
 
 .team {
@@ -250,10 +246,6 @@ color: var(--secondary-title-color);
   margin-right: 0;
 }
 
-.team-img {
-  margin-bottom: 30px;
-}
-
 .team-subtitle {
 margin-bottom: 10px;
 font-size: 16px;
@@ -271,14 +263,14 @@ letter-spacing: 0.03em;
 }
 
 .team-txt {
-  padding-bottom: 30px;
+  padding: 30px 32px;
 }
 
 .location {
   margin-top: 20px;
 }
 
-.footer-item {
+.footer-item:not(:last-child) {
 padding-bottom: 9px;
 }
 
@@ -289,6 +281,8 @@ padding-bottom: 9px;
 }
 
 .logo-bottom {
+display: block;
+margin-bottom: 20px;
 font-family: Raleway;
 font-style: normal;
 font-weight: bold;
@@ -364,6 +358,7 @@ background-color: var(--accent-color);
 }
 
 .profile-img {
+  margin-left: -30px;
   display: flex;
   flex-wrap: wrap;
 }
