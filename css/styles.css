@@ -361,10 +361,11 @@ background-color: var(--accent-color);
 }
 
 .profile-img {
-  display: flex;
-  flex-wrap: wrap;
   margin-right: -30px;
   margin-bottom: -30px;
+  display: flex;
+  flex-wrap: wrap;
+  
 }
 
 .prof-img {
